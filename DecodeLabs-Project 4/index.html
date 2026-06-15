@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedCore System Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="theme-switch-wrapper">
+        <button type="button" id="themeToggle" class="theme-toggle-btn">Dark Mode</button>
+    </div>
+
+    <main class="form-container">
+        <header class="form-header">
+            <h2>MedCore System Portal</h2>
+            <p>Project 4: Form Design & Validation Platform</p>
+        </header>
+
+        <form id="gatekeeperForm" novalidate>
+            
+            <div class="input-group">
+                <label for="fullName">Operator Full Name</label>
+                <input type="text" id="fullName" placeholder="e.g., Uchechukwu Prince">
+                <span id="nameError" class="error-message"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Secure System Email</label>
+                <input type="email" id="email" placeholder="username@medcore.com">
+                <span id="emailError" class="error-message"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Security Access Key</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Enter strict access key">
+                    <button type="button" id="passwordToggle" class="visibility-toggle">Show</button>
+                </div>
+                <span id="passwordError" class="error-message"></span>
+            </div>
+
+            <div id="successBuffer" class="success-toast"></div>
+
+            <button type="submit" class="submit-btn">INITIATE ACCESS</button>
+        </form>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
